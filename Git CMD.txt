@@ -1,0 +1,86 @@
+
+C:\Users\efhas> cd"C:\Users\efhas\Documents\ALPRO_2\M3"
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\efhas>cd C:/Users/efhas/Documents/ALPRO_2/M3
+
+C:\Users\efhas\Documents\ALPRO_2\M3>git init
+Reinitialized existing Git repository in C:/Users/efhas/Documents/ALPRO_2/M3/.git/
+
+C:\Users\efhas\Documents\ALPRO_2\M3>git add .
+warning: adding embedded git repository: repobaby
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> repobaby
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached repobaby
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+C:\Users\efhas\Documents\ALPRO_2\M3>git rm --cached repobaby
+error: the following file has staged content different from both the
+file and the HEAD:
+    repobaby
+(use -f to force removal)
+
+C:\Users\efhas\Documents\ALPRO_2\M3>git commit -auth login
+error: did you mean `--auth` (with two dashes)?
+
+C:\Users\efhas\Documents\ALPRO_2\M3>gith commit -m "Initial commit"
+'gith' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\efhas\Documents\ALPRO_2\M3>git commit -m "Initial commit"
+[master (root-commit) 82e468e] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 repobaby
+
+C:\Users\efhas\Documents\ALPRO_2\M3>gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? No
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 43B4-47FF
+Press Enter to open github.com in your browser...
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as TopGie
+! You were already logged in to this account
+
+C:\Users\efhas\Documents\ALPRO_2\M3>gh repo create <babarepo> --public
+The system cannot find the file specified.
+
+C:\Users\efhas\Documents\ALPRO_2\M3>gh repo create <repobaby> --publoc
+Access is denied.
+
+C:\Users\efhas\Documents\ALPRO_2\M3>gh repo create <repobaby> --public
+Access is denied.
+
+C:\Users\efhas\Documents\ALPRO_2\M3>gh repo create <repomama> --public
+The system cannot find the file specified.
+
+C:\Users\efhas\Documents\ALPRO_2\M3> cd repobaby
+
+C:\Users\efhas\Documents\ALPRO_2\M3\repobaby>git remote add origin gracia.angela.hasjim-2023@ftmm.unair.ac.id/repobaby.git
+error: remote origin already exists.
+
+C:\Users\efhas\Documents\ALPRO_2\M3\repobaby>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 235 bytes | 78.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/TopGie/repobaby.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\efhas\Documents\ALPRO_2\M3\repobaby>
